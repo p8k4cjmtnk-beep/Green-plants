@@ -549,6 +549,7 @@
         $('#checkout-form').addEventListener('submit', submitOrder);
       }
       $('#f-city-other-wrap').hidden = citySel.value !== 'other';
+      $('#f-email').required = !!s.payments.card;
       renderCheckoutSummary();
     },
 
@@ -650,7 +651,11 @@
       });
       const out = await res.json().catch(() => ({}));
       if (!res.ok || !out.ok) {
-        if (out.code === 'card_unavailable') { showMsg(msg, t('checkout.cardError'), true); return; }
+        if (out.code === 'card_unavailable') {
+          showMsg(msg, t('checkout.cardError'), true,
+            '<a class="btn btn-wa" target="_blank" rel="noopener" href="' + waLink(orderText(data)) + '">' + ICON.whatsapp + esc(t('checkout.waFallback')) + '</a>');
+          return;
+        }
         throw new Error(out.error || 'order failed');
       }
       if (payment === 'card' && out.paytrToken) {

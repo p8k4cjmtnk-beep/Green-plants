@@ -164,7 +164,7 @@ window.I18N = {
     "checkout.agree": "Sipariş vererek gizlilik politikası ve mesafeli satış sözleşmesini kabul ediyorum.",
     "checkout.agreeLink": "Koşulları oku",
     "checkout.error": "Sipariş gönderilemedi. Lütfen siparişinizi WhatsApp'tan iletin.",
-    "checkout.cardError": "Online ödeme şu anda kullanılamıyor. Lütfen başka bir ödeme yöntemi seçin.",
+    "checkout.cardError": "Online ödeme şu anda kullanılamıyor. Siparişinizi WhatsApp'tan iletebilirsiniz.",
     "checkout.waFallback": "WhatsApp ile gönder",
     "checkout.cardTitle": "Güvenli ödeme",
     "checkout.emailCard": "Online ödeme için e-posta zorunludur",
@@ -178,7 +178,7 @@ window.I18N = {
     "success.back": "Ana sayfaya dön",
 
     "fail.title": "Ödeme tamamlanamadı",
-    "fail.text": "Ödeme sırasında bir sorun oluştu. Kartınızdan para çekilmediyse tekrar deneyebilir veya başka bir ödeme yöntemi seçebilirsiniz.",
+    "fail.text": "Ödeme sırasında bir sorun oluştu. Kartınızdan para çekilmediyse tekrar deneyebilir veya bize yazabilirsiniz.",
     "fail.retry": "Tekrar dene",
     "fail.contact": "Bize yazın",
 
@@ -358,7 +358,7 @@ window.I18N = {
     "checkout.agree": "Оформляя заказ, я соглашаюсь с политикой конфиденциальности и договором дистанционной продажи.",
     "checkout.agreeLink": "Читать условия",
     "checkout.error": "Не удалось отправить заказ. Пожалуйста, отправьте его через WhatsApp.",
-    "checkout.cardError": "Онлайн-оплата сейчас недоступна. Пожалуйста, выберите другой способ оплаты.",
+    "checkout.cardError": "Онлайн-оплата сейчас недоступна. Вы можете отправить заказ через WhatsApp.",
     "checkout.waFallback": "Отправить в WhatsApp",
     "checkout.cardTitle": "Безопасная оплата",
     "checkout.emailCard": "Для онлайн-оплаты нужен e-mail",
@@ -372,7 +372,7 @@ window.I18N = {
     "success.back": "На главную",
 
     "fail.title": "Оплата не прошла",
-    "fail.text": "Во время оплаты что-то пошло не так. Если деньги не списались, попробуйте ещё раз или выберите другой способ оплаты.",
+    "fail.text": "Во время оплаты что-то пошло не так. Если деньги не списались, попробуйте ещё раз или напишите нам.",
     "fail.retry": "Попробовать снова",
     "fail.contact": "Написать нам",
 
@@ -552,7 +552,7 @@ window.I18N = {
     "checkout.agree": "By placing an order I accept the privacy policy and the distance sales agreement.",
     "checkout.agreeLink": "Read the terms",
     "checkout.error": "Could not send the order. Please send it via WhatsApp.",
-    "checkout.cardError": "Online payment is unavailable right now. Please choose another payment method.",
+    "checkout.cardError": "Online payment is unavailable right now. You can send your order via WhatsApp.",
     "checkout.waFallback": "Send via WhatsApp",
     "checkout.cardTitle": "Secure payment",
     "checkout.emailCard": "Email is required for online payment",
@@ -566,7 +566,7 @@ window.I18N = {
     "success.back": "Back to home",
 
     "fail.title": "Payment failed",
-    "fail.text": "Something went wrong during payment. If you were not charged, try again or choose another payment method.",
+    "fail.text": "Something went wrong during payment. If you were not charged, try again or message us.",
     "fail.retry": "Try again",
     "fail.contact": "Message us",
 

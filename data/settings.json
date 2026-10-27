@@ -22,9 +22,9 @@
     "freeFrom": 750
   },
   "payments": {
-    "card": false,
-    "transfer": true,
-    "cash": true
+    "card": true,
+    "transfer": false,
+    "cash": false
   },
   "bank": {
     "bank": "Örnek Bankası",
