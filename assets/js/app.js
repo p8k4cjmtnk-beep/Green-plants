@@ -85,6 +85,14 @@
     star: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>'
   };
 
+  // Логотип: надпись BY HERBA с зелёным листом и подписью cosmetic.
+  // Если появится файл логотипа, замените LOGO на '<img src="assets/img/logo.svg" alt="By Herba">'.
+  const LOGO =
+    '<span class="brand"><span class="brand-name">BY HERBA</span>' +
+    '<svg class="brand-swoosh" viewBox="0 0 160 22" aria-hidden="true"><path d="M2 14C40 4 98 2 154 3c-30 3-62 9-92 15C40 22 16 21 2 14z" fill="#6cbf3c"/>' +
+    '<path d="M10 17c44 6 92-2 140-12" stroke="#2f7d22" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>' +
+    '<span class="brand-sub">cosmetic</span></span>';
+
   /* ---------- Иллюстрации товаров (пока нет фото) ---------- */
 
   function productArt(p) {
@@ -95,14 +103,19 @@
     const bg = '<rect width="200" height="200" fill="#f1ebdf"/><circle cx="100" cy="112" r="70" fill="' + c + '" opacity=".18"/>' +
       '<path d="M28 178c18-30 40-40 62-38-14 8-30 20-38 38z" fill="#2f4a3a" opacity=".18"/>' +
       '<path d="M176 60c-16 2-30 14-32 32 14-4 26-14 32-32z" fill="#2f4a3a" opacity=".14"/>';
+    const label = (x, y, w, h) =>
+      '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="2" fill="#fff" stroke="#1f2747" stroke-width=".8"/>' +
+      '<text x="' + (x + w / 2) + '" y="' + (y + 11) + '" text-anchor="middle" font-family="Rubik,Arial,sans-serif" font-style="italic" font-weight="800" font-size="8" fill="#1f2747">BY HERBA</text>' +
+      '<path d="M' + (x + 8) + ' ' + (y + 14) + 'q' + (w / 2 - 8) + ' -4 ' + (w - 16) + ' -2" stroke="#6cbf3c" stroke-width="2" fill="none" stroke-linecap="round"/>' +
+      '<circle cx="' + (x + w / 2) + '" cy="' + (y + h / 2 + 5) + '" r="' + Math.min(9, h / 5) + '" fill="' + c + '"/>';
     const diffuser = (x, y, s) =>
       '<g transform="translate(' + x + ' ' + y + ') scale(' + s + ')">' +
-      '<g stroke="#6b5a45" stroke-width="2.2" stroke-linecap="round"><path d="M96 80 70 14"/><path d="M100 80 98 8"/><path d="M104 80 128 16"/><path d="M98 80 84 20"/><path d="M102 80 114 12"/></g>' +
-      '<rect x="88" y="74" width="24" height="14" rx="3" fill="#2f4a3a"/>' +
-      '<rect x="66" y="86" width="68" height="86" rx="16" fill="#fff" opacity=".75" stroke="#2f4a3a" stroke-opacity=".25" stroke-width="2"/>' +
-      '<rect x="69" y="122" width="62" height="47" rx="13" fill="' + c + '" opacity=".85"/>' +
-      '<rect x="78" y="104" width="44" height="22" rx="3" fill="#fbf8f2" stroke="#b08d57" stroke-width="1"/>' +
-      '<text x="100" y="119" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#2f4a3a">By Herba</text></g>';
+      '<g stroke="#1b1b1b" stroke-width="2.4" stroke-linecap="round"><path d="M95 70 66 10"/><path d="M98 70 92 6"/><path d="M102 70 110 6"/><path d="M105 70 134 12"/></g>' +
+      '<rect x="84" y="62" width="32" height="20" rx="3" fill="#1b1b1b"/>' +
+      '<rect x="56" y="80" width="88" height="94" rx="9" fill="' + c + '" opacity=".72"/>' +
+      '<rect x="56" y="80" width="88" height="94" rx="9" fill="none" stroke="#ffffff" stroke-opacity=".7" stroke-width="3"/>' +
+      '<path d="M64 88v76" stroke="#fff" stroke-opacity=".55" stroke-width="4" stroke-linecap="round"/>' +
+      label(72, 104, 56, 52) + '</g>';
     const spray = (x, y, s) =>
       '<g transform="translate(' + x + ' ' + y + ') scale(' + s + ')">' +
       '<rect x="86" y="44" width="28" height="18" rx="4" fill="#2f4a3a"/><rect x="112" y="48" width="14" height="6" rx="2" fill="#2f4a3a"/>' +
@@ -115,12 +128,14 @@
     if (p.category === 'diffuser') body = diffuser(0, 0, 1);
     else if (p.category === 'spray') body = spray(0, 0, 1);
     else if (p.category === 'soap') {
-      body = '<defs><pattern id="mesh-' + esc(p.id) + '" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0h8M0 0v8" stroke="#fff" stroke-opacity=".55" stroke-width="1.4"/></pattern></defs>' +
-        '<ellipse cx="100" cy="120" rx="62" ry="44" fill="' + c + '"/>' +
-        '<ellipse cx="100" cy="120" rx="62" ry="44" fill="url(#mesh-' + esc(p.id) + ')"/>' +
-        '<rect x="74" y="104" width="52" height="32" rx="10" fill="#fbf8f2" opacity=".7"/>' +
-        '<text x="100" y="124" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#2f4a3a">By Herba</text>' +
-        '<path d="M100 76c-4-10 2-18 10-20" stroke="#2f4a3a" stroke-width="2" fill="none" stroke-linecap="round"/>';
+      const pid = 'mesh-' + esc(p.id);
+      body = '<defs><pattern id="' + pid + '" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 0h7M0 0v7" stroke="#a89a5c" stroke-width="1.3"/></pattern></defs>' +
+        '<path d="M150 104 172 86v44l-22 22z" fill="' + c + '" opacity=".75"/>' +
+        '<path d="M150 104 172 86v44l-22 22z" fill="#000" opacity=".08"/>' +
+        '<rect x="28" y="104" width="122" height="48" rx="6" fill="' + c + '"/>' +
+        '<path d="M28 104 50 86h122l-22 18z" fill="#e3d9a6"/><path d="M28 104 50 86h122l-22 18z" fill="url(#' + pid + ')"/>' +
+        '<rect x="28" y="104" width="122" height="16" fill="#e3d9a6"/><rect x="28" y="104" width="122" height="16" fill="url(#' + pid + ')"/>' +
+        '<text x="89" y="141" text-anchor="middle" font-family="Rubik,Arial,sans-serif" font-style="italic" font-weight="800" font-size="13" fill="#1f2747">BY HERBA</text>';
     } else {
       body = '<rect x="30" y="150" width="140" height="28" rx="4" fill="#2f4a3a" opacity=".9"/><rect x="94" y="150" width="12" height="28" fill="#b08d57"/>' +
         diffuser(-6, 8, 0.78) + spray(66, 22, 0.7);
@@ -188,7 +203,7 @@
 
     $('#site-header').innerHTML =
       '<div class="container header-inner">' +
-        '<a href="index.html" class="logo" aria-label="By Herba"><span class="logo-mark">' + ICON.leaf + '</span><span class="logo-text">By Herba</span></a>' +
+        '<a href="index.html" class="logo" aria-label="By Herba cosmetic">' + LOGO + '</a>' +
         '<nav class="main-nav" id="main-nav">' +
           '<a href="catalog.html" data-i18n="nav.catalog"></a>' +
           '<a href="' + home + '#about" data-i18n="nav.about"></a>' +
@@ -207,7 +222,7 @@
 
     $('#site-footer').innerHTML =
       '<div class="container footer-grid">' +
-        '<div><a href="index.html" class="logo logo-light"><span class="logo-mark">' + ICON.leaf + '</span><span class="logo-text">By Herba</span></a>' +
+        '<div><a href="index.html" class="logo logo-light" aria-label="By Herba cosmetic">' + LOGO + '</a>' +
           '<p class="muted-light" data-i18n="footer.tagline"></p>' +
           '<div class="socials">' +
             '<a href="' + waLink() + '" target="_blank" rel="noopener" aria-label="WhatsApp">' + ICON.whatsapp + '</a>' +
@@ -479,7 +494,7 @@
             '<h1>' + esc(L(p.name)) + '</h1>' +
             '<div class="price price-lg">' + money(p.price) + (sale ? ' <s>' + money(p.oldPrice) + '</s>' : '') + '</div>' +
             '<p class="stock ' + (p.inStock ? 'in' : 'out') + '">' + esc(t(p.inStock ? 'product.inStock' : 'product.outOfStock')) + '</p>' +
-            '<p class="lead">' + esc(L(p.description)) + '</p>' +
+            '<p class="lead">' + esc(L(p.description) || t('desc.' + p.category)) + '</p>' +
             '<dl class="specs">' +
               (p.volume ? '<div><dt>' + esc(t('product.volume')) + '</dt><dd>' + esc(p.volume) + '</dd></div>' : '') +
               (L(p.notes) ? '<div><dt>' + esc(t('product.notes')) + '</dt><dd>' + esc(L(p.notes)) + '</dd></div>' : '') +
@@ -489,6 +504,8 @@
                 '<button type="button" class="btn btn-primary" id="padd">' + esc(t('product.add')) + '</button></div>'
               : '') +
             '<a class="btn btn-wa" target="_blank" rel="noopener" href="' + waLink(t('product.waText', { x: L(p.name) })) + '">' + ICON.whatsapp + esc(t('product.buyWa')) + '</a>' +
+            (p.category === 'diffuser' || p.category === 'soap'
+              ? '<div class="howto"><h3>' + esc(t('how.title')) + '</h3><p>' + esc(t('how.' + p.category)) + '</p></div>' : '') +
             '<ul class="perks"><li>' + ICON.truck + esc(t('b2.d')) + '</li><li>' + ICON.gift + esc(t('faq.a5')) + '</li></ul>' +
           '</div></div>';
 

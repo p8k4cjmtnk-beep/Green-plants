@@ -1,54 +1,337 @@
 {
-  "categories": ["diffuser", "spray", "soap", "set"],
+  "categories": [
+    "diffuser",
+    "soap",
+    "spray",
+    "set"
+  ],
   "products": [
     {
-      "id": "diffuser-lavender",
+      "id": "diffuser-lavanta",
       "category": "diffuser",
-      "name": { "ru": "Диффузор «Лаванда»", "tr": "Lavanta Bambu Çubuklu Oda Kokusu", "en": "Lavender Reed Diffuser" },
-      "description": {
-        "ru": "Мягкий успокаивающий аромат прованской лаванды. Наполняет комнату свежестью на 6–8 недель. В комплекте натуральные ротанговые палочки.",
-        "tr": "Provence lavantasının yumuşak ve rahatlatıcı kokusu. Odanızı 6–8 hafta boyunca ferahlatır. Doğal rattan çubuklar dahildir.",
-        "en": "A soft, calming scent of Provence lavender. Freshens your room for 6–8 weeks. Natural rattan reeds included."
+      "name": {
+        "ru": "Диффузор «Лаванда»",
+        "tr": "Lavanta Oda Kokusu",
+        "en": "Lavender Reed Diffuser"
       },
-      "notes": { "ru": "Лаванда, бергамот, белый мускус", "tr": "Lavanta, bergamot, beyaz misk", "en": "Lavender, bergamot, white musk" },
-      "volume": "100 ml",
+      "volume": "120 ml",
       "price": 450,
-      "oldPrice": 550,
-      "color": "#9b8ec4",
+      "color": "#8f86c9",
       "image": "",
       "featured": true,
       "inStock": true
     },
     {
-      "id": "diffuser-white-tea",
+      "id": "diffuser-vanilya",
       "category": "diffuser",
-      "name": { "ru": "Диффузор «Белый чай»", "tr": "Beyaz Çay Bambu Çubuklu Oda Kokusu", "en": "White Tea Reed Diffuser" },
-      "description": {
-        "ru": "Чистый, лёгкий аромат белого чая — идеален для гостиной и офиса. Хватает на 6–8 недель.",
-        "tr": "Beyaz çayın temiz ve hafif kokusu — salon ve ofis için ideal. 6–8 hafta etkili.",
-        "en": "A clean, light white tea scent — perfect for the living room or office. Lasts 6–8 weeks."
+      "name": {
+        "ru": "Диффузор «Ваниль»",
+        "tr": "Vanilya Oda Kokusu",
+        "en": "Vanilla Reed Diffuser"
       },
-      "notes": { "ru": "Белый чай, жасмин, кедр", "tr": "Beyaz çay, yasemin, sedir", "en": "White tea, jasmine, cedar" },
-      "volume": "100 ml",
+      "volume": "120 ml",
       "price": 450,
-      "color": "#d9c9a3",
+      "color": "#d9e2b8",
       "image": "",
       "featured": true,
       "inStock": true
     },
     {
-      "id": "diffuser-sandalwood",
+      "id": "diffuser-deniz-esintisi",
       "category": "diffuser",
-      "name": { "ru": "Диффузор «Сандал»", "tr": "Sandal Ağacı Bambu Çubuklu Oda Kokusu", "en": "Sandalwood Reed Diffuser" },
-      "description": {
-        "ru": "Тёплый древесный аромат сандала с нотами ванили создаёт уютную атмосферу вечером.",
-        "tr": "Vanilya notalarıyla sıcak sandal ağacı kokusu, akşamları sıcak bir atmosfer yaratır.",
-        "en": "A warm woody sandalwood scent with vanilla notes for a cosy evening atmosphere."
+      "name": {
+        "ru": "Диффузор «Морской бриз»",
+        "tr": "Deniz Esintisi Oda Kokusu",
+        "en": "Sea Breeze Reed Diffuser"
       },
-      "notes": { "ru": "Сандал, ваниль, амбра", "tr": "Sandal ağacı, vanilya, amber", "en": "Sandalwood, vanilla, amber" },
-      "volume": "100 ml",
-      "price": 490,
-      "color": "#b8865b",
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#86cccc",
+      "image": "",
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-gul",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Роза»",
+        "tr": "Gül Oda Kokusu",
+        "en": "Rose Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#e07a5f",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-yasemin",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Жасмин»",
+        "tr": "Yasemin Oda Kokusu",
+        "en": "Jasmine Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#bfd9b8",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-leylak",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Сирень»",
+        "tr": "Leylak Oda Kokusu",
+        "en": "Lilac Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#c9a0c4",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-sumbul",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Гиацинт»",
+        "tr": "Sümbül Oda Kokusu",
+        "en": "Hyacinth Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#8794d4",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-beyaz-sabun",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Белое мыло»",
+        "tr": "Beyaz Sabun Oda Kokusu",
+        "en": "White Soap Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#b5d6a8",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-tarcin-karanfil",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Корица и гвоздика»",
+        "tr": "Tarçın Karanfil Oda Kokusu",
+        "en": "Cinnamon & Clove Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#e4b443",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-kahve",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Кофе»",
+        "tr": "Kahve Oda Kokusu",
+        "en": "Coffee Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#d9b85a",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-amber",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Амбра»",
+        "tr": "Amber Oda Kokusu",
+        "en": "Amber Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#e6a83e",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-mango",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Манго»",
+        "tr": "Mango Oda Kokusu",
+        "en": "Mango Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#ead457",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-orman-meyveli",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Лесные ягоды»",
+        "tr": "Orman Meyveli Oda Kokusu",
+        "en": "Forest Fruits Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#e3958a",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-egzotik",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Экзотик»",
+        "tr": "Egzotik Oda Kokusu",
+        "en": "Exotic Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#a9d45e",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-sakiz",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Бабл-гам»",
+        "tr": "Sakız Oda Kokusu",
+        "en": "Bubble Gum Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#e79aae",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-melek",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Ангел»",
+        "tr": "Melek Oda Kokusu",
+        "en": "Angel Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#8fcfd0",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "diffuser-mint-pine",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Мята и сосна»",
+        "tr": "Mint Pine Oda Kokusu",
+        "en": "Mint Pine Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#62b850",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "soap-keci-sutu",
+      "category": "soap",
+      "name": {
+        "ru": "Мыло с козьим молоком в мочалке",
+        "tr": "Keçi Sütlü Süngerli Sabun",
+        "en": "Goat Milk Sponge Soap"
+      },
+      "volume": "130 g",
+      "price": 140,
+      "color": "#e9ecc4",
+      "image": "",
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": "soap-aloe-vera",
+      "category": "soap",
+      "name": {
+        "ru": "Мыло «Алоэ вера» в мочалке",
+        "tr": "Aloe Vera Süngerli Sabun",
+        "en": "Aloe Vera Sponge Soap"
+      },
+      "volume": "130 g",
+      "price": 140,
+      "color": "#7fc04a",
+      "image": "",
+      "featured": true,
+      "inStock": true
+    },
+    {
+      "id": "soap-esek-sutu",
+      "category": "soap",
+      "name": {
+        "ru": "Мыло с ослиным молоком в мочалке",
+        "tr": "Eşek Sütlü Süngerli Sabun",
+        "en": "Donkey Milk Sponge Soap"
+      },
+      "volume": "130 g",
+      "price": 140,
+      "color": "#dfe6d0",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "soap-gul",
+      "category": "soap",
+      "name": {
+        "ru": "Мыло «Роза» в мочалке",
+        "tr": "Gül Süngerli Sabun",
+        "en": "Rose Sponge Soap"
+      },
+      "volume": "130 g",
+      "price": 140,
+      "color": "#e8907a",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "soap-pirinc",
+      "category": "soap",
+      "name": {
+        "ru": "Рисовое мыло в мочалке",
+        "tr": "Pirinç Süngerli Sabun",
+        "en": "Rice Sponge Soap"
+      },
+      "volume": "130 g",
+      "price": 140,
+      "color": "#cfd6dc",
       "image": "",
       "featured": false,
       "inStock": true
@@ -56,13 +339,11 @@
     {
       "id": "spray-orange-blossom",
       "category": "spray",
-      "name": { "ru": "Спрей для дома «Цветок апельсина»", "tr": "Portakal Çiçeği Oda ve Tekstil Spreyi", "en": "Orange Blossom Room & Linen Spray" },
-      "description": {
-        "ru": "Спрей для комнаты, штор и текстиля. Мгновенно освежает пространство солнечным цитрусовым ароматом.",
-        "tr": "Oda, perde ve tekstil için sprey. Güneşli narenciye kokusuyla ortamı anında ferahlatır.",
-        "en": "For rooms, curtains and linen. Instantly refreshes any space with a sunny citrus scent."
+      "name": {
+        "ru": "Спрей для дома «Цветок апельсина»",
+        "tr": "Portakal Çiçeği Oda ve Tekstil Spreyi",
+        "en": "Orange Blossom Room & Linen Spray"
       },
-      "notes": { "ru": "Нероли, апельсин, мандарин", "tr": "Neroli, portakal, mandalina", "en": "Neroli, orange, mandarin" },
       "volume": "250 ml",
       "price": 290,
       "color": "#f0b46a",
@@ -73,13 +354,11 @@
     {
       "id": "spray-cotton",
       "category": "spray",
-      "name": { "ru": "Спрей для текстиля «Хлопок»", "tr": "Pamuk Çiçeği Tekstil Spreyi", "en": "Fresh Cotton Linen Spray" },
-      "description": {
-        "ru": "Аромат свежевыстиранного белья. Подходит для постельного белья, одежды и мебели.",
-        "tr": "Yeni yıkanmış çamaşır kokusu. Nevresim, giysi ve mobilyalar için uygundur.",
-        "en": "The scent of freshly washed laundry. Suitable for bedding, clothes and upholstery."
+      "name": {
+        "ru": "Спрей для текстиля «Хлопок»",
+        "tr": "Pamuk Çiçeği Tekstil Spreyi",
+        "en": "Fresh Cotton Linen Spray"
       },
-      "notes": { "ru": "Хлопок, ландыш, мускус", "tr": "Pamuk, inci çiçeği, misk", "en": "Cotton, lily of the valley, musk" },
       "volume": "250 ml",
       "price": 290,
       "color": "#a9c7d6",
@@ -88,49 +367,18 @@
       "inStock": true
     },
     {
-      "id": "soap-olive",
-      "category": "soap",
-      "name": { "ru": "Мыло в мочалке «Олива»", "tr": "Zeytinyağlı Sabunlu Lif", "en": "Olive Oil Soap in Sponge" },
-      "description": {
-        "ru": "Натуральное оливковое мыло внутри мочалки — пенится и очищает кожу одновременно. Мягкий пилинг-эффект.",
-        "tr": "Lifin içinde doğal zeytinyağlı sabun — aynı anda köpürür ve cildi temizler. Hafif peeling etkisi.",
-        "en": "Natural olive oil soap inside a sponge — lathers and cleanses at the same time. Gentle exfoliating effect."
-      },
-      "notes": { "ru": "Оливковое масло, лавр", "tr": "Zeytinyağı, defne", "en": "Olive oil, bay laurel" },
-      "volume": "120 g",
-      "price": 140,
-      "color": "#a3b46b",
-      "image": "",
-      "featured": true,
-      "inStock": true
-    },
-    {
-      "id": "soap-rose",
-      "category": "soap",
-      "name": { "ru": "Мыло в мочалке «Роза»", "tr": "Gül Kokulu Sabunlu Lif", "en": "Rose Soap in Sponge" },
-      "description": {
-        "ru": "Нежное мыло с ароматом розы внутри мягкой мочалки. Отличный небольшой подарок.",
-        "tr": "Yumuşak lifin içinde gül kokulu nazik sabun. Harika küçük bir hediye.",
-        "en": "Gentle rose-scented soap inside a soft sponge. A lovely little gift."
-      },
-      "notes": { "ru": "Роза, пион", "tr": "Gül, şakayık", "en": "Rose, peony" },
-      "volume": "120 g",
-      "price": 140,
-      "color": "#e3a3a8",
-      "image": "",
-      "featured": false,
-      "inStock": true
-    },
-    {
       "id": "set-gift",
       "category": "set",
-      "name": { "ru": "Подарочный набор", "tr": "Hediye Seti", "en": "Gift Set" },
-      "description": {
-        "ru": "Диффузор 100 ml + спрей 250 ml + мыло в мочалке в подарочной упаковке. Выгоднее, чем покупать по отдельности.",
-        "tr": "Hediye kutusunda 100 ml oda kokusu + 250 ml sprey + sabunlu lif. Ayrı ayrı almaktan daha avantajlı.",
-        "en": "100 ml diffuser + 250 ml spray + soap in sponge in a gift box. Better value than buying separately."
+      "name": {
+        "ru": "Подарочный набор",
+        "tr": "Hediye Seti",
+        "en": "Gift Set"
       },
-      "notes": { "ru": "Аромат на выбор — укажите в комментарии", "tr": "Koku seçimi — sipariş notunda belirtin", "en": "Scent of your choice — mention it in the order comment" },
+      "description": {
+        "ru": "Диффузор 120 ml + спрей + мыло в мочалке в подарочной упаковке. Аромат диффузора укажите в комментарии к заказу.",
+        "tr": "Hediye kutusunda 120 ml oda kokusu + sprey + süngerli sabun. Oda kokusu seçiminizi sipariş notunda belirtin.",
+        "en": "120 ml diffuser + spray + sponge soap in a gift box. Mention the diffuser scent in the order comment."
+      },
       "volume": "",
       "price": 750,
       "oldPrice": 880,
