@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>By Herba</title>
+  <meta name="description" content="">
+  <meta name="theme-color" content="#2f4a3a">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header" id="site-header"></header>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-i18n="hero.badge"></span></span>
+          <h1 data-i18n="hero.title"></h1>
+          <p class="lead" data-i18n="hero.subtitle"></p>
+          <div class="hero-actions">
+            <a href="catalog.html" class="btn btn-primary" data-i18n="hero.cta"></a>
+            <a href="#" id="hero-wa" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="hero.cta2"></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="art art-1"></div>
+          <div class="art art-2"></div>
+          <div class="art art-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container benefits">
+        <div class="benefit"><div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg></div><h3 data-i18n="b1.t"></h3><p data-i18n="b1.d"></p></div>
+        <div class="benefit"><div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div><h3 data-i18n="b2.t"></h3><p data-i18n="b2.d"></p></div>
+        <div class="benefit"><div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3 data-i18n="b3.t"></h3><p data-i18n="b3.d"></p></div>
+        <div class="benefit"><div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4"/><path d="M5 12v9h14v-9M12 8v13M12 8S10 3 7.5 4.5 9 8 12 8zm0 0s2-5 4.5-3.5S15 8 12 8z"/></svg></div><h3 data-i18n="b4.t"></h3><p data-i18n="b4.d"></p></div>
+      </div>
+    </section>
+
+    <section class="section section-sand">
+      <div class="container">
+        <div class="section-head"><h2 data-i18n="cats.title"></h2></div>
+        <div class="cats" id="home-cats"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="featured.title"></h2>
+          <a href="catalog.html" class="btn btn-ghost" data-i18n="featured.all"></a>
+        </div>
+        <div class="grid" id="home-featured"></div>
+      </div>
+    </section>
+
+    <section class="section section-sand" id="about">
+      <div class="container about">
+        <div class="about-art">
+          <svg viewBox="0 0 500 400" aria-hidden="true">
+            <rect width="500" height="400" fill="#2f4a3a"/>
+            <circle cx="380" cy="90" r="120" fill="#4c6b56" opacity=".6"/>
+            <circle cx="90" cy="340" r="140" fill="#24392d"/>
+            <g fill="none" stroke="#b08d57" stroke-width="2" opacity=".8">
+              <path d="M250 360c0-110 30-190 110-250"/>
+              <path d="M262 290c30-10 60-30 80-60M256 230c-30-12-60-40-70-80M270 180c26-6 50-24 64-50"/>
+            </g>
+            <g fill="#dfe7dc" opacity=".9">
+              <path d="M342 230c30-30 70-30 92-20-20 30-60 40-92 20z"/>
+              <path d="M186 150c-10-40 10-74 34-86 10 34-4 70-34 86z"/>
+              <path d="M334 130c24-30 62-36 86-28-18 30-54 42-86 28z"/>
+            </g>
+            <text x="40" y="70" font-family="Cormorant Garamond, Georgia, serif" font-size="44" fill="#f4efe5">By Herba</text>
+            <text x="42" y="100" font-family="Manrope, sans-serif" font-size="13" letter-spacing="4" fill="#b08d57">İSTANBUL · GAZİANTEP</text>
+          </svg>
+        </div>
+        <div>
+          <span class="eyebrow" data-i18n="about.eyebrow"></span>
+          <h2 data-i18n="about.title"></h2>
+          <p class="lead" data-i18n="about.p1"></p>
+          <p class="muted" data-i18n="about.p2"></p>
+          <div class="stats">
+            <div class="stat"><strong>2</strong><span data-i18n="about.s1"></span></div>
+            <div class="stat"><strong>6–8</strong><span data-i18n="about.s2"></span></div>
+            <div class="stat"><strong>81</strong><span data-i18n="about.s3"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-green">
+      <div class="container">
+        <div class="section-head"><h2 data-i18n="steps.title"></h2></div>
+        <div class="steps">
+          <div class="step"><h3 data-i18n="step1.t"></h3><p data-i18n="step1.d"></p></div>
+          <div class="step"><h3 data-i18n="step2.t"></h3><p data-i18n="step2.d"></p></div>
+          <div class="step"><h3 data-i18n="step3.t"></h3><p data-i18n="step3.d"></p></div>
+          <div class="step"><h3 data-i18n="step4.t"></h3><p data-i18n="step4.d"></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head"><h2 data-i18n="reviews.title"></h2></div>
+        <div class="reviews" id="home-reviews"></div>
+      </div>
+    </section>
+
+    <section class="section section-sand" id="delivery">
+      <div class="container">
+        <span class="eyebrow" data-i18n="delivery.eyebrow"></span>
+        <div class="section-head"><h2 data-i18n="delivery.title"></h2></div>
+        <div class="delivery">
+          <div class="info-list">
+            <div class="info-item"><div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><h3 data-i18n="delivery.d1.t"></h3><p data-i18n="delivery.d1.d"></p></div></div>
+            <div class="info-item"><div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg></div><div><h3 data-i18n="delivery.d2.t"></h3><p data-i18n="delivery.d2.d"></p></div></div>
+            <div class="info-item"><div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div><div><h3 data-i18n="delivery.d3.t"></h3><p id="delivery-free"></p></div></div>
+          </div>
+          <div class="pay-card">
+            <h3 data-i18n="pay.title"></h3>
+            <div class="pay-row" data-pay="card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg><div><strong data-i18n="pay.card"></strong><small data-i18n="pay.cardDesc"></small></div></div>
+            <div class="pay-row" data-pay="transfer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></svg><div><strong data-i18n="pay.transfer"></strong><small data-i18n="pay.transferDesc"></small></div></div>
+            <div class="pay-row" data-pay="cash"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/></svg><div><strong data-i18n="pay.cash"></strong><small data-i18n="pay.cashDesc"></small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 style="text-align:center" data-i18n="faq.title"></h2>
+        <div class="faq">
+          <details><summary data-i18n="faq.q1"></summary><p data-i18n="faq.a1"></p></details>
+          <details><summary data-i18n="faq.q2"></summary><p data-i18n="faq.a2"></p></details>
+          <details><summary data-i18n="faq.q3"></summary><p data-i18n="faq.a3"></p></details>
+          <details><summary data-i18n="faq.q4"></summary><p data-i18n="faq.a4"></p></details>
+          <details><summary data-i18n="faq.q5"></summary><p data-i18n="faq.a5"></p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sand" id="contacts">
+      <div class="container contact">
+        <div>
+          <span class="eyebrow" data-i18n="contact.eyebrow"></span>
+          <h2 data-i18n="contact.title"></h2>
+          <p class="lead" data-i18n="contact.subtitle"></p>
+          <h3 data-i18n="contact.locations" style="margin-top:28px"></h3>
+          <div id="locations"></div>
+        </div>
+        <form class="card" id="contact-form" novalidate>
+          <div class="field"><label for="c-name" data-i18n="form.name"></label><input id="c-name" name="name" required maxlength="100" autocomplete="name"></div>
+          <div class="field"><label for="c-phone" data-i18n="form.phone"></label><input id="c-phone" name="phone" type="tel" required maxlength="30" autocomplete="tel" placeholder="+90 5__ ___ __ __"></div>
+          <div class="field"><label for="c-msg" data-i18n="form.message"></label><textarea id="c-msg" name="message" required maxlength="2000"></textarea></div>
+          <div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="form.send"></button>
+          <div class="form-msg" id="contact-msg" hidden role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

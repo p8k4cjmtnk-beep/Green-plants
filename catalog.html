@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>By Herba</title>
+  <meta name="description" content="">
+  <meta name="theme-color" content="#2f4a3a">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="catalog" data-title="catalog.title">
+  <header class="site-header" id="site-header"></header>
+  <main>
+    <div class="container">
+      <div class="page-head"><h1 data-i18n="catalog.title"></h1></div>
+      <div class="toolbar">
+        <div class="chips" id="cat-filters"></div>
+        <div class="toolbar-right">
+          <input type="search" id="cat-search" data-i18n-ph="catalog.search" data-i18n-aria="catalog.search">
+          <select id="cat-sort" data-i18n-aria="catalog.sort">
+            <option value="popular" data-i18n="sort.popular"></option>
+            <option value="priceAsc" data-i18n="sort.priceAsc"></option>
+            <option value="priceDesc" data-i18n="sort.priceDesc"></option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" id="cat-grid" style="padding-bottom:72px"></div>
+    </div>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "brand": "By Herba",
+  "phone": "+90 500 000 00 00",
+  "whatsapp": "905000000000",
+  "telegram": "byherba",
+  "instagram": "byherba",
+  "email": "info@byherba.com",
+  "locations": [
+    {
+      "city": { "ru": "Стамбул", "tr": "İstanbul", "en": "Istanbul" },
+      "address": "Örnek Mah. Örnek Cad. No:1, Kadıköy / İstanbul",
+      "hours": { "ru": "Пн–Сб 10:00–20:00", "tr": "Pzt–Cmt 10:00–20:00", "en": "Mon–Sat 10:00–20:00" }
+    },
+    {
+      "city": { "ru": "Газиантеп", "tr": "Gaziantep", "en": "Gaziantep" },
+      "address": "Örnek Mah. Örnek Cad. No:1, Şehitkamil / Gaziantep",
+      "hours": { "ru": "Пн–Сб 10:00–20:00", "tr": "Pzt–Cmt 10:00–20:00", "en": "Mon–Sat 10:00–20:00" }
+    }
+  ],
+  "delivery": {
+    "cost": 90,
+    "freeFrom": 750
+  },
+  "payments": {
+    "card": false,
+    "transfer": true,
+    "cash": true
+  },
+  "bank": {
+    "bank": "Örnek Bankası",
+    "holder": "By Herba",
+    "iban": "TR00 0000 0000 0000 0000 0000 00"
+  },
+  "reviews": [
+    {
+      "sample": true,
+      "name": "Ayşe",
+      "city": "İstanbul",
+      "rating": 5,
+      "text": "Это пример отзыва. Замените его настоящим отзывом клиента в файле data/settings.json."
+    },
+    {
+      "sample": true,
+      "name": "Мария",
+      "city": "Gaziantep",
+      "rating": 5,
+      "text": "Это пример отзыва. Замените его настоящим отзывом клиента в файле data/settings.json."
+    },
+    {
+      "sample": true,
+      "name": "Emre",
+      "city": "İstanbul",
+      "rating": 5,
+      "text": "Это пример отзыва. Замените его настоящим отзывом клиента в файле data/settings.json."
+    }
+  ]
+}
