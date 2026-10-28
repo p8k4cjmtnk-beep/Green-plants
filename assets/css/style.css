@@ -170,7 +170,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 520px) { .benefits { grid-template-columns: 1fr; } }
 
 /* Категории */
-.cats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.cats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
 .cat-card { display: block; text-decoration: none; background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); transition: transform .2s, box-shadow .2s; }
 .cat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .cat-art { aspect-ratio: 4 / 3; overflow: hidden; }

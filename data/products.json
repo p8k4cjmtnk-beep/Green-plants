@@ -2,6 +2,7 @@
   "categories": [
     "diffuser",
     "soap",
+    "loofah",
     "spray",
     "set"
   ],
@@ -265,7 +266,7 @@
       "id": "soap-keci-sutu",
       "category": "soap",
       "name": {
-        "ru": "Мыло с козьим молоком в мочалке",
+        "ru": "Губчатое мыло с козьим молоком",
         "tr": "Keçi Sütlü Süngerli Sabun",
         "en": "Goat Milk Sponge Soap"
       },
@@ -280,7 +281,7 @@
       "id": "soap-aloe-vera",
       "category": "soap",
       "name": {
-        "ru": "Мыло «Алоэ вера» в мочалке",
+        "ru": "Губчатое мыло «Алоэ вера»",
         "tr": "Aloe Vera Süngerli Sabun",
         "en": "Aloe Vera Sponge Soap"
       },
@@ -295,7 +296,7 @@
       "id": "soap-esek-sutu",
       "category": "soap",
       "name": {
-        "ru": "Мыло с ослиным молоком в мочалке",
+        "ru": "Губчатое мыло с ослиным молоком",
         "tr": "Eşek Sütlü Süngerli Sabun",
         "en": "Donkey Milk Sponge Soap"
       },
@@ -310,7 +311,7 @@
       "id": "soap-gul",
       "category": "soap",
       "name": {
-        "ru": "Мыло «Роза» в мочалке",
+        "ru": "Губчатое мыло «Роза»",
         "tr": "Gül Süngerli Sabun",
         "en": "Rose Sponge Soap"
       },
@@ -325,15 +326,30 @@
       "id": "soap-pirinc",
       "category": "soap",
       "name": {
-        "ru": "Рисовое мыло в мочалке",
-        "tr": "Pirinç Süngerli Sabun",
-        "en": "Rice Sponge Soap"
+        "ru": "Губчатое мыло с экстрактом риса",
+        "tr": "Pirinç Özlü Süngerli Sabun",
+        "en": "Rice Extract Sponge Soap"
       },
       "volume": "130 g",
       "price": 140,
       "color": "#cfd6dc",
       "image": "",
       "featured": false,
+      "inStock": true
+    },
+    {
+      "id": "loofah-soap",
+      "category": "loofah",
+      "name": {
+        "ru": "Мыло с тыквенным волокном",
+        "tr": "Kabak Lifli Sabun",
+        "en": "Pumpkin Fiber Skin Soap"
+      },
+      "volume": "",
+      "price": 140,
+      "color": "#f1eee4",
+      "image": "",
+      "featured": true,
       "inStock": true
     },
     {

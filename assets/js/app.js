@@ -130,6 +130,18 @@
     if (p.category === 'diffuser') body = diffuser(0, 0, 1);
     else if (p.category === 'spray') body = spray(0, 0, 1);
     else if (p.category === 'soap') {
+      // Овальное губчатое мыло с круглой этикеткой
+      body = '<ellipse cx="100" cy="112" rx="64" ry="74" fill="#efe9d6" stroke="#d8cfb2" stroke-width="3"/>' +
+        '<ellipse cx="100" cy="112" rx="54" ry="63" fill="#fff"/>' +
+        '<ellipse cx="100" cy="112" rx="54" ry="63" fill="' + c + '" opacity=".28"/>' +
+        '<text x="100" y="72" text-anchor="middle" font-family="Rubik,Arial,sans-serif" font-style="italic" font-weight="800" font-size="11" fill="#1f2747">BY HERBA</text>' +
+        '<path d="M80 76q20-5 40-1" stroke="#6cbf3c" stroke-width="2.4" fill="none" stroke-linecap="round"/>' +
+        '<circle cx="100" cy="108" r="22" fill="' + c + '" stroke="#fff" stroke-width="3"/>' +
+        '<rect x="74" y="138" width="52" height="4" rx="2" fill="#1f2747" opacity=".55"/>' +
+        '<rect x="82" y="147" width="36" height="3" rx="1.5" fill="#1f2747" opacity=".3"/>' +
+        '<text x="100" y="164" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#1f2747">130g</text>';
+    } else if (p.category === 'loofah') {
+      // Прямоугольное мыло, сверху мочалка из тыквенного волокна
       const pid = 'mesh-' + esc(p.id);
       body = '<defs><pattern id="' + pid + '" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 0h7M0 0v7" stroke="#a89a5c" stroke-width="1.3"/></pattern></defs>' +
         '<path d="M150 104 172 86v44l-22 22z" fill="' + c + '" opacity=".75"/>' +
