@@ -1,4 +1,4 @@
-/* Панель управления Wees Mod: вход по паролю, список товаров, редактор, настройки. */
+/* Панель управления Wees Mod (на турецком): вход по паролю, список товаров, редактор, настройки. */
 (function () {
   'use strict';
 
@@ -21,30 +21,11 @@
       whatsapp: 'WhatsApp numarası', waHint: 'Örnek: 905321234567. Boş bırakırsanız WhatsApp butonları görünmez.',
       instagram: 'Instagram kullanıcı adı', sizes: 'Bedenler (virgülle)', sizesHint: 'Örnek: 2-3, 4-5, 6-7',
       saveSettings: 'Ayarları kaydet', logout: 'Çıkış', view: 'Siteyi aç', empty: 'Henüz ürün yok.'
-    },
-    ru: {
-      title: 'Управление', password: 'Пароль', login: 'Войти', wrong: 'Неверный пароль',
-      noPassword: 'На сервере не задан пароль (ADMIN_PASSWORD).', offline: 'Нет связи с сервером. Сайт открыт на Netlify?',
-      products: 'Товары', settings: 'Настройки', add: '+ Новый товар', edit: 'Изменить', del: 'Удалить', up: '↑', down: '↓',
-      inStock: 'В наличии', soldOut: 'Нет в наличии', featured: 'На главной', askPrice: 'Цена по запросу', colors: 'цв.',
-      confirmDel: 'Удалить этот товар?', saved: 'Сохранено. На сайте видно сразу.', saveErr: 'Не удалось сохранить: ',
-      newProduct: 'Новый товар', editProduct: 'Изменить товар',
-      nameTr: 'Название (турецкий) *', otherLangs: 'Название на английском и арабском (необязательно)', nameEn: 'Название (английский)', nameAr: 'Название (арабский)',
-      gender: 'Категория', girl: 'Девочки', boy: 'Мальчики', unisex: 'Девочки и мальчики', season: 'Сезон', winter: 'Спортивный / зима', summer: 'Лето',
-      price: 'Цена (TL)', priceHint: 'Если оставить пустым, на сайте будет «Fiyat için yazın».',
-      featuredLabel: 'Показывать на главной', stockLabel: 'Есть в наличии',
-      colorsTitle: 'Цвета и фото', addColor: '+ Добавить цвет', removeColor: 'Удалить цвет', colorName: 'Название цвета (турецкий)',
-      colorOther: 'Цвет на английском / арабском', photo: 'Выбрать фото', uploading: 'Загрузка…',
-      save: 'Сохранить', cancel: 'Отмена', back: '← Товары',
-      needName: 'Впишите название на турецком.', needPhoto: 'Добавьте фото для каждого цвета.', needColor: 'Добавьте хотя бы один цвет.',
-      whatsapp: 'Номер WhatsApp', waHint: 'Например: 905321234567. Если пусто, кнопки WhatsApp не показываются.',
-      instagram: 'Instagram', sizes: 'Размеры (через запятую)', sizesHint: 'Например: 2-3, 4-5, 6-7',
-      saveSettings: 'Сохранить настройки', logout: 'Выйти', view: 'Открыть сайт', empty: 'Товаров пока нет.'
     }
   };
 
   const state = {
-    lang: store('get', 'wm_admin_lang') || 'tr',
+    lang: 'tr',
     key: store('get', 'wm_admin_key') || '',
     catalog: null,
     tab: 'products',
@@ -93,18 +74,11 @@
   function top(loggedIn) {
     return '<header class="top"><div class="top-inner">' +
       '<span class="brand">wees mod<small>' + esc(t('title')) + '</small></span><span class="spacer"></span>' +
-      '<div class="lang">' + ['tr', 'ru'].map((l) => '<button type="button" data-lang="' + l + '" class="' + (l === state.lang ? 'active' : '') + '">' + l.toUpperCase() + '</button>').join('') + '</div>' +
       (loggedIn ? '<a class="view" href="../" target="_blank" rel="noopener">' + esc(t('view')) + '</a>' : '') +
       '</div></header>';
   }
 
-  function bindTop() {
-    $$('.lang button').forEach((b) => b.addEventListener('click', () => {
-      state.lang = b.dataset.lang;
-      store('set', 'wm_admin_lang', state.lang);
-      render();
-    }));
-  }
+  function bindTop() {}
 
   /* ---------- Вход ---------- */
 
