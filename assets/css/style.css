@@ -45,7 +45,7 @@ p { margin: 0 0 1em; }
 [hidden] { display: none !important; }
 :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 
-.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 16px; }
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 20px; }
 @media (min-width: 768px) { .container { padding: 0 32px; } }
 
 .section { padding: 72px 0; }
@@ -140,7 +140,7 @@ p { margin: 0 0 1em; }
 
 /* Hero */
 .hero { position: relative; overflow: hidden; background: radial-gradient(120% 80% at 85% 20%, #e6dcc6 0%, transparent 60%), var(--bg); }
-.hero-inner { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; padding: 72px 0 88px; }
+.hero-inner { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; padding-top: 72px; padding-bottom: 88px; }
 .hero h1 { color: var(--green-dark); }
 .hero .lead { font-size: 1.15rem; max-width: 34em; }
 .hero-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); font-size: .85rem; font-weight: 600; color: var(--green); margin-bottom: 20px; }
@@ -155,7 +155,7 @@ p { margin: 0 0 1em; }
 .hero-art .art-2 { width: 42%; right: 2%; top: 4%; }
 .hero-art .art-3 { width: 40%; right: 8%; bottom: 2%; }
 @media (max-width: 860px) {
-  .hero-inner { grid-template-columns: 1fr; padding: 40px 0 56px; gap: 32px; }
+  .hero-inner { grid-template-columns: 1fr; padding-top: 40px; padding-bottom: 56px; gap: 32px; }
   .hero-art { max-width: 380px; }
 }
 
@@ -384,7 +384,7 @@ p { margin: 0 0 1em; }
 }
 
 /* Результат заказа / простые страницы */
-.result { max-width: 620px; margin: 0 auto; text-align: center; padding: 80px 0; }
+.result { max-width: 620px; margin: 0 auto; text-align: center; padding-top: 80px; padding-bottom: 80px; }
 .result-icon { width: 72px; height: 72px; border-radius: 50%; display: grid; place-items: center; margin: 0 auto 20px; background: var(--green-soft); color: var(--green); }
 .result-icon svg { width: 36px; height: 36px; }
 .result-icon.fail { background: #f7e3dc; color: var(--danger); }
