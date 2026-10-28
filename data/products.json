@@ -16,7 +16,7 @@
         "en": "Lavender Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#8f86c9",
       "image": "",
       "featured": true,
@@ -31,7 +31,7 @@
         "en": "Vanilla Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#d9e2b8",
       "image": "",
       "featured": true,
@@ -46,7 +46,7 @@
         "en": "Sea Breeze Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#86cccc",
       "image": "",
       "featured": true,
@@ -61,7 +61,7 @@
         "en": "Rose Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#e07a5f",
       "image": "",
       "featured": false,
@@ -76,7 +76,7 @@
         "en": "Jasmine Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#bfd9b8",
       "image": "",
       "featured": false,
@@ -91,7 +91,7 @@
         "en": "Lilac Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#c9a0c4",
       "image": "",
       "featured": false,
@@ -106,7 +106,7 @@
         "en": "Hyacinth Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#8794d4",
       "image": "",
       "featured": false,
@@ -121,7 +121,7 @@
         "en": "White Soap Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#b5d6a8",
       "image": "",
       "featured": false,
@@ -136,7 +136,7 @@
         "en": "Cinnamon & Clove Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#e4b443",
       "image": "",
       "featured": false,
@@ -151,7 +151,7 @@
         "en": "Coffee Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#d9b85a",
       "image": "",
       "featured": false,
@@ -166,7 +166,7 @@
         "en": "Amber Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#e6a83e",
       "image": "",
       "featured": false,
@@ -181,7 +181,7 @@
         "en": "Mango Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#ead457",
       "image": "",
       "featured": false,
@@ -196,7 +196,7 @@
         "en": "Forest Fruits Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#e3958a",
       "image": "",
       "featured": false,
@@ -211,7 +211,7 @@
         "en": "Exotic Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#a9d45e",
       "image": "",
       "featured": false,
@@ -226,7 +226,7 @@
         "en": "Bubble Gum Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#e79aae",
       "image": "",
       "featured": false,
@@ -241,7 +241,7 @@
         "en": "Angel Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#8fcfd0",
       "image": "",
       "featured": false,
@@ -256,7 +256,7 @@
         "en": "Mint Pine Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#62b850",
       "image": "",
       "featured": false,
@@ -271,7 +271,7 @@
         "en": "Dream Garden Reed Diffuser"
       },
       "volume": "120 ml",
-      "price": 450,
+      "price": 100,
       "color": "#a6d65a",
       "image": "",
       "featured": false,
@@ -286,7 +286,7 @@
         "en": "Goat Milk Sponge Soap"
       },
       "volume": "130 g",
-      "price": 140,
+      "price": 100,
       "color": "#e9ecc4",
       "image": "",
       "featured": true,
@@ -301,7 +301,7 @@
         "en": "Aloe Vera Sponge Soap"
       },
       "volume": "130 g",
-      "price": 140,
+      "price": 100,
       "color": "#7fc04a",
       "image": "",
       "featured": true,
@@ -316,7 +316,7 @@
         "en": "Donkey Milk Sponge Soap"
       },
       "volume": "130 g",
-      "price": 140,
+      "price": 100,
       "color": "#dfe6d0",
       "image": "",
       "featured": false,
@@ -331,7 +331,7 @@
         "en": "Rose Sponge Soap"
       },
       "volume": "130 g",
-      "price": 140,
+      "price": 100,
       "color": "#e8907a",
       "image": "",
       "featured": false,
@@ -346,7 +346,7 @@
         "en": "Rice Extract Sponge Soap"
       },
       "volume": "130 g",
-      "price": 140,
+      "price": 100,
       "color": "#cfd6dc",
       "image": "",
       "featured": false,
@@ -361,7 +361,7 @@
         "en": "Pumpkin Fiber Skin Soap"
       },
       "volume": "125 g",
-      "price": 140,
+      "price": 100,
       "color": "#f1eee4",
       "image": "",
       "featured": true,
@@ -376,7 +376,7 @@
         "en": "Dream Garden Room Spray"
       },
       "volume": "500 ml",
-      "price": 290,
+      "price": 100,
       "color": "#5fb83a",
       "image": "",
       "featured": true,
