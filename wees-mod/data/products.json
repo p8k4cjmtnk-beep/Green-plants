@@ -1,0 +1,445 @@
+{
+  "products": [
+    {
+      "id": "girl-butterfly",
+      "gender": "girl",
+      "season": "winter",
+      "name": {
+        "tr": "Kelebek Baskılı Eşofman Takımı",
+        "en": "Butterfly Print Tracksuit Set",
+        "ar": "طقم رياضي بطبعة فراشة"
+      },
+      "price": null,
+      "featured": true,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "Gri",
+            "en": "Grey",
+            "ar": "رمادي"
+          },
+          "hex": "#a3a6aa",
+          "image": "img/girl-butterfly-gray.jpg"
+        },
+        {
+          "color": {
+            "tr": "Kahverengi",
+            "en": "Brown",
+            "ar": "بني"
+          },
+          "hex": "#5a3b2e",
+          "image": "img/girl-butterfly-brown.jpg"
+        },
+        {
+          "color": {
+            "tr": "Kırmızı",
+            "en": "Red",
+            "ar": "أحمر"
+          },
+          "hex": "#b3202c",
+          "image": "img/girl-butterfly-red.jpg"
+        },
+        {
+          "color": {
+            "tr": "Yeşil",
+            "en": "Green",
+            "ar": "أخضر"
+          },
+          "hex": "#5f8f78",
+          "image": "img/girl-butterfly-green.jpg"
+        },
+        {
+          "color": {
+            "tr": "Fuşya",
+            "en": "Fuchsia",
+            "ar": "فوشيا"
+          },
+          "hex": "#c2306b",
+          "image": "img/girl-butterfly-fuchsia.jpg"
+        }
+      ]
+    },
+    {
+      "id": "girl-bear",
+      "gender": "girl",
+      "season": "winter",
+      "name": {
+        "tr": "Ayıcık Desenli Bol Paça Takım",
+        "en": "Teddy Bear Wide-Leg Set",
+        "ar": "طقم بنطال واسع بتصميم دبدوب"
+      },
+      "price": null,
+      "featured": true,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "Siyah",
+            "en": "Black",
+            "ar": "أسود"
+          },
+          "hex": "#1c1c1c",
+          "image": "img/girl-bear-black.jpg"
+        },
+        {
+          "color": {
+            "tr": "Pembe",
+            "en": "Pink",
+            "ar": "وردي"
+          },
+          "hex": "#d94f8c",
+          "image": "img/girl-bear-pink.jpg"
+        },
+        {
+          "color": {
+            "tr": "Mor",
+            "en": "Purple",
+            "ar": "بنفسجي"
+          },
+          "hex": "#7a5aa6",
+          "image": "img/girl-bear-purple.jpg"
+        },
+        {
+          "color": {
+            "tr": "Haki",
+            "en": "Khaki",
+            "ar": "كاكي"
+          },
+          "hex": "#7a6f3a",
+          "image": "img/girl-bear-olive.jpg"
+        }
+      ]
+    },
+    {
+      "id": "boy-print",
+      "gender": "boy",
+      "season": "winter",
+      "name": {
+        "tr": "Desenli Eşofman Takımı",
+        "en": "Printed Tracksuit Set",
+        "ar": "طقم رياضي مطبع"
+      },
+      "price": null,
+      "featured": true,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "İş Makinesi",
+            "en": "Construction",
+            "ar": "آليات"
+          },
+          "hex": "#b5b8bb",
+          "image": "img/boy-print-truck.jpg"
+        },
+        {
+          "color": {
+            "tr": "Basketbol",
+            "en": "Basketball",
+            "ar": "كرة سلة"
+          },
+          "hex": "#c4c6c8",
+          "image": "img/boy-print-ball.jpg"
+        },
+        {
+          "color": {
+            "tr": "Mavi Desen",
+            "en": "Blue Print",
+            "ar": "نقش أزرق"
+          },
+          "hex": "#5a7fc0",
+          "image": "img/boy-print-blue.jpg"
+        },
+        {
+          "color": {
+            "tr": "Bej",
+            "en": "Beige",
+            "ar": "بيج"
+          },
+          "hex": "#c8bba5",
+          "image": "img/boy-print-beige.jpg"
+        },
+        {
+          "color": {
+            "tr": "Taş",
+            "en": "Stone",
+            "ar": "حجري"
+          },
+          "hex": "#b2a993",
+          "image": "img/boy-print-beige2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "boy-car",
+      "gender": "boy",
+      "season": "winter",
+      "name": {
+        "tr": "Araba Desenli Eşofman Takımı",
+        "en": "Car Print Tracksuit Set",
+        "ar": "طقم رياضي بطبعة سيارات"
+      },
+      "price": null,
+      "featured": true,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "Gri",
+            "en": "Grey",
+            "ar": "رمادي"
+          },
+          "hex": "#b9bcc0",
+          "image": "img/boy-car-gray.jpg"
+        }
+      ]
+    },
+    {
+      "id": "girl-stripe",
+      "gender": "girl",
+      "season": "winter",
+      "name": {
+        "tr": "Şeritli Eşofman Takımı",
+        "en": "Side Stripe Tracksuit Set",
+        "ar": "طقم رياضي بخطوط جانبية"
+      },
+      "price": null,
+      "featured": false,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "Kahverengi",
+            "en": "Brown",
+            "ar": "بني"
+          },
+          "hex": "#3d2a20",
+          "image": "img/girl-stripe-brown.jpg"
+        }
+      ]
+    },
+    {
+      "id": "girl-22",
+      "gender": "girl",
+      "season": "winter",
+      "name": {
+        "tr": "22 Baskılı Sweat Takımı",
+        "en": "Number 22 Sweatshirt Set",
+        "ar": "طقم سويت شيرت بطبعة 22"
+      },
+      "price": null,
+      "featured": false,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "Lila",
+            "en": "Lilac",
+            "ar": "ليلكي"
+          },
+          "hex": "#8f84d6",
+          "image": "img/girl-22-lilac.jpg"
+        }
+      ]
+    },
+    {
+      "id": "girl-print",
+      "gender": "girl",
+      "season": "winter",
+      "name": {
+        "tr": "Desenli Sweat Takımı",
+        "en": "Printed Sweat Set",
+        "ar": "طقم سويت مطبع"
+      },
+      "price": null,
+      "featured": false,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "Pembe Rozet",
+            "en": "Pink Badges",
+            "ar": "وردي بشارات"
+          },
+          "hex": "#e9a6c9",
+          "image": "img/girl-print-badge.jpg"
+        },
+        {
+          "color": {
+            "tr": "Pembe Ayıcık",
+            "en": "Pink Teddy",
+            "ar": "وردي بدبدوب"
+          },
+          "hex": "#f0b3c6",
+          "image": "img/girl-print-teddy.jpg"
+        }
+      ]
+    },
+    {
+      "id": "boy-respect",
+      "gender": "boy",
+      "season": "summer",
+      "name": {
+        "tr": "Respect Çizgili Tişört Şort Takım",
+        "en": "Respect Striped T-shirt & Shorts Set",
+        "ar": "طقم تيشيرت مخطط وشورت Respect"
+      },
+      "price": null,
+      "featured": true,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "Antrasit",
+            "en": "Charcoal",
+            "ar": "فحمي"
+          },
+          "hex": "#4a4d50",
+          "image": "img/boy-respect-gray.jpg"
+        },
+        {
+          "color": {
+            "tr": "Siyah",
+            "en": "Black",
+            "ar": "أسود"
+          },
+          "hex": "#1f2229",
+          "image": "img/boy-respect-black.jpg"
+        },
+        {
+          "color": {
+            "tr": "Yeşil",
+            "en": "Green",
+            "ar": "أخضر"
+          },
+          "hex": "#1f4d3a",
+          "image": "img/boy-respect-green.jpg"
+        }
+      ]
+    },
+    {
+      "id": "boy-run",
+      "gender": "boy",
+      "season": "summer",
+      "name": {
+        "tr": "RUN Baskılı Tişört Şort Takım",
+        "en": "RUN Print T-shirt & Shorts Set",
+        "ar": "طقم تيشيرت وشورت بطبعة RUN"
+      },
+      "price": null,
+      "featured": false,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "Vizon",
+            "en": "Taupe",
+            "ar": "بني فاتح"
+          },
+          "hex": "#8a7d70",
+          "image": "img/boy-run-brown.jpg"
+        },
+        {
+          "color": {
+            "tr": "Mavi",
+            "en": "Blue",
+            "ar": "أزرق"
+          },
+          "hex": "#4f9fe0",
+          "image": "img/boy-run-blue.jpg"
+        },
+        {
+          "color": {
+            "tr": "Siyah",
+            "en": "Black",
+            "ar": "أسود"
+          },
+          "hex": "#1c1c1c",
+          "image": "img/boy-run-black.jpg"
+        }
+      ]
+    },
+    {
+      "id": "girl-ruffle",
+      "gender": "girl",
+      "season": "summer",
+      "name": {
+        "tr": "Fırfırlı Bluz Kot Şort Takım",
+        "en": "Ruffle Top & Denim Shorts Set",
+        "ar": "طقم بلوزة بكشكش وشورت جينز"
+      },
+      "price": null,
+      "featured": false,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "Pembe",
+            "en": "Pink",
+            "ar": "وردي"
+          },
+          "hex": "#f2a1b8",
+          "image": "img/girl-ruffle-pink.jpg"
+        },
+        {
+          "color": {
+            "tr": "Kırmızı",
+            "en": "Red",
+            "ar": "أحمر"
+          },
+          "hex": "#c8202f",
+          "image": "img/girl-ruffle-red.jpg"
+        }
+      ]
+    },
+    {
+      "id": "girl-flower",
+      "gender": "girl",
+      "season": "summer",
+      "name": {
+        "tr": "Çiçek Detaylı Tişört Kapri Takım",
+        "en": "Flower T-shirt & Capri Set",
+        "ar": "طقم تيشيرت وكابري بزهور"
+      },
+      "price": null,
+      "featured": false,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "Pembe",
+            "en": "Pink",
+            "ar": "وردي"
+          },
+          "hex": "#d9667e",
+          "image": "img/girl-flower-pink.jpg"
+        }
+      ]
+    },
+    {
+      "id": "girl-denim",
+      "gender": "girl",
+      "season": "summer",
+      "name": {
+        "tr": "Denim Detaylı Gömlek Pantolon Takım",
+        "en": "Denim Panel Shirt & Trousers Set",
+        "ar": "طقم قميص وبنطال بتفاصيل جينز"
+      },
+      "price": null,
+      "featured": false,
+      "inStock": true,
+      "variants": [
+        {
+          "color": {
+            "tr": "Bej-Denim",
+            "en": "Beige-Denim",
+            "ar": "بيج وجينز"
+          },
+          "hex": "#c9ab83",
+          "image": "img/girl-denim-beige.jpg"
+        }
+      ]
+    }
+  ]
+}

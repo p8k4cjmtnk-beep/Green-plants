@@ -1,0 +1,21 @@
+{
+  "brand": "Wees Mod",
+  "instagram": "wees.mod",
+  "whatsapp": "",
+  "phone": "",
+  "email": "",
+  "city": {
+    "tr": "Türkiye",
+    "en": "Turkey",
+    "ar": "تركيا"
+  },
+  "sizes": [
+    "2-3",
+    "4-5",
+    "6-7",
+    "8-9",
+    "10-11",
+    "12-13"
+  ],
+  "currency": "TRY"
+}
