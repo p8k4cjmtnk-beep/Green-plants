@@ -116,14 +116,16 @@
       '<rect x="56" y="80" width="88" height="94" rx="9" fill="none" stroke="#ffffff" stroke-opacity=".7" stroke-width="3"/>' +
       '<path d="M64 88v76" stroke="#fff" stroke-opacity=".55" stroke-width="4" stroke-linecap="round"/>' +
       label(72, 104, 56, 52) + '</g>';
+    // Флакон-спрей: узкий флакон с распылителем и облачком брызг (не путать с дозатором для мыла).
     const spray = (x, y, s) =>
       '<g transform="translate(' + x + ' ' + y + ') scale(' + s + ')">' +
-      '<rect x="86" y="44" width="28" height="18" rx="4" fill="#2f4a3a"/><rect x="112" y="48" width="14" height="6" rx="2" fill="#2f4a3a"/>' +
-      '<rect x="92" y="60" width="16" height="14" fill="#b08d57"/>' +
-      '<rect x="72" y="72" width="56" height="102" rx="14" fill="#fff" opacity=".75" stroke="#2f4a3a" stroke-opacity=".25" stroke-width="2"/>' +
-      '<rect x="75" y="104" width="50" height="67" rx="11" fill="' + c + '" opacity=".85"/>' +
-      '<rect x="80" y="112" width="40" height="26" rx="3" fill="#fbf8f2" stroke="#b08d57" stroke-width="1"/>' +
-      '<text x="100" y="129" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#2f4a3a">By Herba</text></g>';
+      '<g fill="' + c + '" opacity=".55"><circle cx="128" cy="40" r="2.6"/><circle cx="138" cy="34" r="2"/><circle cx="140" cy="46" r="2.2"/><circle cx="150" cy="38" r="1.6"/><circle cx="152" cy="50" r="1.8"/><circle cx="162" cy="43" r="1.3"/></g>' +
+      '<rect x="88" y="30" width="24" height="24" rx="6" fill="#1b1b1b"/><circle cx="112" cy="40" r="2" fill="#555"/>' +
+      '<rect x="91" y="54" width="18" height="10" fill="#c9c9c9"/>' +
+      '<rect x="74" y="64" width="52" height="110" rx="12" fill="' + c + '" opacity=".72"/>' +
+      '<rect x="74" y="64" width="52" height="110" rx="12" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="3"/>' +
+      '<path d="M81 72v94" stroke="#fff" stroke-opacity=".55" stroke-width="4" stroke-linecap="round"/>' +
+      label(80, 100, 40, 48) + '</g>';
     let body;
     if (p.category === 'diffuser') body = diffuser(0, 0, 1);
     else if (p.category === 'spray') body = spray(0, 0, 1);
@@ -434,7 +436,8 @@
         '<a class="contact-link" href="https://instagram.com/' + esc(s.instagram) + '" target="_blank" rel="noopener">' + ICON.instagram + 'Instagram</a></div>';
 
       $('#hero-wa').href = waLink();
-      const heroPicks = ['diffuser', 'spray', 'soap'].map((c) => state.catalog.products.find((x) => x.category === c)).filter(Boolean);
+      const diffusers = state.catalog.products.filter((x) => x.category === 'diffuser');
+      const heroPicks = [diffusers[0], diffusers[2] || diffusers[1], state.catalog.products.find((x) => x.category === 'soap')].filter(Boolean);
       $$('.hero-art .art').forEach((el, i) => { el.innerHTML = heroPicks[i] ? productArt(heroPicks[i]) : ''; });
     },
 
