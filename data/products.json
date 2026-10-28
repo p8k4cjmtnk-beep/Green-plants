@@ -1,9 +1,9 @@
 {
   "categories": [
     "diffuser",
+    "spray",
     "soap",
     "loofah",
-    "spray",
     "set"
   ],
   "products": [
@@ -263,6 +263,21 @@
       "inStock": true
     },
     {
+      "id": "diffuser-dusler-bahcesi",
+      "category": "diffuser",
+      "name": {
+        "ru": "Диффузор «Сад мечты»",
+        "tr": "Düşler Bahçesi Oda Kokusu",
+        "en": "Dream Garden Reed Diffuser"
+      },
+      "volume": "120 ml",
+      "price": 450,
+      "color": "#a6d65a",
+      "image": "",
+      "featured": false,
+      "inStock": true
+    },
+    {
       "id": "soap-keci-sutu",
       "category": "soap",
       "name": {
@@ -353,33 +368,18 @@
       "inStock": true
     },
     {
-      "id": "spray-orange-blossom",
+      "id": "spray-dusler-bahcesi",
       "category": "spray",
       "name": {
-        "ru": "Спрей для дома «Цветок апельсина»",
-        "tr": "Portakal Çiçeği Oda ve Tekstil Spreyi",
-        "en": "Orange Blossom Room & Linen Spray"
+        "ru": "Парфюм для дома «Сад мечты»",
+        "tr": "Düşler Bahçesi Oda Parfümü",
+        "en": "Dream Garden Room Spray"
       },
-      "volume": "250 ml",
+      "volume": "",
       "price": 290,
-      "color": "#f0b46a",
+      "color": "#5fb83a",
       "image": "",
       "featured": true,
-      "inStock": true
-    },
-    {
-      "id": "spray-cotton",
-      "category": "spray",
-      "name": {
-        "ru": "Спрей для текстиля «Хлопок»",
-        "tr": "Pamuk Çiçeği Tekstil Spreyi",
-        "en": "Fresh Cotton Linen Spray"
-      },
-      "volume": "250 ml",
-      "price": 290,
-      "color": "#a9c7d6",
-      "image": "",
-      "featured": false,
       "inStock": true
     },
     {

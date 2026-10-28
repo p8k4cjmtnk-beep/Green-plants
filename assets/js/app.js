@@ -116,16 +116,19 @@
       '<rect x="56" y="80" width="88" height="94" rx="9" fill="none" stroke="#ffffff" stroke-opacity=".7" stroke-width="3"/>' +
       '<path d="M64 88v76" stroke="#fff" stroke-opacity=".55" stroke-width="4" stroke-linecap="round"/>' +
       label(72, 104, 56, 52) + '</g>';
-    // Флакон-спрей: узкий флакон с распылителем и облачком брызг (не путать с дозатором для мыла).
+    // Парфюм для дома: круглый флакон с чёрным курком-распылителем, как у настоящего товара.
     const spray = (x, y, s) =>
       '<g transform="translate(' + x + ' ' + y + ') scale(' + s + ')">' +
-      '<g fill="' + c + '" opacity=".55"><circle cx="128" cy="40" r="2.6"/><circle cx="138" cy="34" r="2"/><circle cx="140" cy="46" r="2.2"/><circle cx="150" cy="38" r="1.6"/><circle cx="152" cy="50" r="1.8"/><circle cx="162" cy="43" r="1.3"/></g>' +
-      '<rect x="88" y="30" width="24" height="24" rx="6" fill="#1b1b1b"/><circle cx="112" cy="40" r="2" fill="#555"/>' +
-      '<rect x="91" y="54" width="18" height="10" fill="#c9c9c9"/>' +
-      '<rect x="74" y="64" width="52" height="110" rx="12" fill="' + c + '" opacity=".72"/>' +
-      '<rect x="74" y="64" width="52" height="110" rx="12" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="3"/>' +
-      '<path d="M81 72v94" stroke="#fff" stroke-opacity=".55" stroke-width="4" stroke-linecap="round"/>' +
-      label(80, 100, 40, 48) + '</g>';
+      '<path d="M84 22h44l10 10v12h-8l-4-6H96l-4 14H84z" fill="#1b1b1b"/>' +
+      '<path d="M108 44c4 10 6 20 4 28" stroke="#1b1b1b" stroke-width="6" fill="none" stroke-linecap="round"/>' +
+      '<rect x="86" y="56" width="26" height="14" rx="2" fill="#1b1b1b"/>' +
+      '<path d="M88 70h22c0 8 18 12 18 26v66c0 8-6 12-12 12H82c-6 0-12-4-12-12V96c0-14 18-18 18-26z" fill="' + c + '" opacity=".8"/>' +
+      '<path d="M78 98v60" stroke="#fff" stroke-opacity=".5" stroke-width="4" stroke-linecap="round"/>' +
+      '<rect x="74" y="106" width="50" height="50" rx="3" fill="#dff0a8"/>' +
+      '<path d="M74 106h50v14c-16 4-34-4-50 2z" fill="#2c4fa3"/>' +
+      '<text x="99" y="117" text-anchor="middle" font-family="Rubik,Arial,sans-serif" font-style="italic" font-weight="800" font-size="8" fill="#fff">BY HERBA</text>' +
+      '<circle cx="99" cy="138" r="9" fill="' + c + '"/>' +
+      '</g>';
     let body;
     if (p.category === 'diffuser') body = diffuser(0, 0, 1);
     else if (p.category === 'spray') body = spray(0, 0, 1);
