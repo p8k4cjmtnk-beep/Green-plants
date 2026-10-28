@@ -451,8 +451,7 @@
         '<a class="contact-link" href="https://instagram.com/' + esc(s.instagram) + '" target="_blank" rel="noopener">' + ICON.instagram + 'Instagram</a></div>';
 
       $('#hero-wa').href = waLink();
-      const diffusers = state.catalog.products.filter((x) => x.category === 'diffuser');
-      const heroPicks = [diffusers[0], diffusers[2] || diffusers[1], state.catalog.products.find((x) => x.category === 'soap')].filter(Boolean);
+      const heroPicks = ['diffuser', 'spray', 'soap'].map((c) => state.catalog.products.find((x) => x.category === c)).filter(Boolean);
       $$('.hero-art .art').forEach((el, i) => { el.innerHTML = heroPicks[i] ? productArt(heroPicks[i]) : ''; });
     },
 
