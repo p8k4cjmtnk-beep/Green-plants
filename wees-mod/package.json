@@ -1,0 +1,8 @@
+{
+  "name": "wees-mod",
+  "private": true,
+  "description": "Wees Mod kids' clothing catalog with a simple admin panel",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.7"
+  }
+}

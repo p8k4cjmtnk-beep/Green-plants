@@ -85,13 +85,21 @@
 
   /* ---------- Данные ---------- */
 
+  // Сначала берём каталог из панели управления (/api/products), а если сервера нет
+  // (например, при локальном просмотре) — из файлов data/.
   async function loadData() {
-    const [settings, catalog] = await Promise.all([
-      fetch('data/settings.json').then((r) => r.json()),
-      fetch('data/products.json').then((r) => r.json())
-    ]);
-    state.settings = settings;
-    state.products = catalog.products;
+    const local = await fetch('data/settings.json').then((r) => r.json());
+    try {
+      const res = await fetch('/api/products', { cache: 'no-store' });
+      const live = res.ok ? await res.json() : null;
+      if (live && Array.isArray(live.products)) {
+        state.settings = Object.assign({}, local, live.settings);
+        state.products = live.products;
+        return;
+      }
+    } catch (e) { /* нет сервера — используем файлы */ }
+    state.settings = local;
+    state.products = (await fetch('data/products.json').then((r) => r.json())).products;
   }
 
   /* ---------- Список заказа ---------- */
@@ -320,8 +328,8 @@
 
     const f = state.filter;
     const list = state.products
-      .filter((p) => f === 'all' || p.gender === f || p.season === f)
-      .slice().sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+      // Порядок как в панели управления (продавец меняет его стрелками).
+      .filter((p) => f === 'all' || p.gender === f || p.season === f || (p.gender === 'unisex' && (f === 'girl' || f === 'boy')));
 
     $('#grid').innerHTML = list.length ? list.map((p) => {
       const v = p.variants[0];
@@ -333,7 +341,7 @@
         '<div class="card-body">' +
           '<div class="swatches">' + p.variants.map((x) => '<span style="background:' + esc(x.hex) + '" title="' + esc(L(x.color)) + '"></span>').join('') + '</div>' +
           '<h3><button type="button" data-open="' + esc(p.id) + '">' + esc(L(p.name)) + '</button></h3>' +
-          priceHtml(p) +
+          (p.inStock ? priceHtml(p) : '<span class="price ask">' + esc(t('p.soldOut')) + '</span>') +
         '</div></article>';
     }).join('') : '<p class="empty">' + esc(t('col.empty')) + '</p>';
 
@@ -356,7 +364,7 @@
           '<button type="button" class="icon-btn modal-close" data-close aria-label="' + esc(t('p.close')) + '">' + ICON.close + '</button>' +
           '<div class="modal-img"><img src="' + esc(v.image) + '" alt="' + esc(L(p.name) + ' — ' + L(v.color)) + '"></div>' +
           '<div class="modal-body">' +
-            '<span class="eyebrow">' + esc(t('filter.' + p.gender)) + '</span>' +
+            (p.gender !== 'unisex' ? '<span class="eyebrow">' + esc(t('filter.' + p.gender)) + '</span>' : '') +
             '<h2 id="p-title">' + esc(L(p.name)) + '</h2>' +
             priceHtml(p) +
             '<div class="opt"><span class="opt-label">' + esc(t('p.color')) + ': <b>' + esc(L(v.color)) + '</b></span>' +
@@ -369,7 +377,8 @@
               '<p class="size-err" id="size-err" hidden>' + esc(t('p.pickSize')) + '</p></div>' : '') +
             '<div class="opt row"><span class="opt-label">' + esc(t('p.qty')) + '</span>' +
               '<div class="qty qty-lg" id="p-qty"><button type="button" data-d="-1" aria-label="-">−</button><span>' + ui.qty + '</span><button type="button" data-d="1" aria-label="+">+</button></div></div>' +
-            '<div class="modal-actions">' +
+            (!p.inStock ? '<p class="price ask">' + esc(t('p.soldOut')) + '</p>' : '') +
+            '<div class="modal-actions"' + (p.inStock ? '' : ' hidden') + '>' +
               '<button type="button" class="btn btn-dark btn-block" id="p-add">' + esc(t('p.add')) + '</button>' +
               '<button type="button" class="btn btn-ig btn-block" id="p-ig">' + ICON.instagram + esc(t('p.orderNow')) + '</button>' +
               (state.settings.whatsapp ? '<button type="button" class="btn btn-wa btn-block" id="p-wa">' + ICON.whatsapp + 'WhatsApp</button>' : '') +
@@ -433,7 +442,8 @@
     const wa = $('#contact-wa');
     wa.hidden = !s.whatsapp;
     if (s.whatsapp) wa.href = waLink();
-    const heroImgs = ['girl-butterfly', 'boy-respect', 'girl-bear'].map((id) => findProduct(id)).filter(Boolean);
+    const featured = state.products.filter((p) => p.featured && p.inStock);
+    const heroImgs = (featured.length >= 3 ? featured : state.products).slice(0, 3);
     $$('.hero-photos img').forEach((img, i) => {
       if (heroImgs[i]) { img.src = heroImgs[i].variants[0].image; img.alt = L(heroImgs[i].name); }
     });

@@ -46,6 +46,7 @@ window.I18N = {
     "p.pickSize": "Lütfen beden seçin",
     "p.close": "Kapat",
     "p.note": "Beden ve stok durumunu sipariş sırasında teyit ediyoruz.",
+    "p.soldOut": "Tükendi",
 
     "bag.title": "Sipariş listesi",
     "bag.empty": "Listeniz boş",
@@ -132,6 +133,7 @@ window.I18N = {
     "p.pickSize": "Please choose a size",
     "p.close": "Close",
     "p.note": "We confirm size and stock when you order.",
+    "p.soldOut": "Sold out",
 
     "bag.title": "Order list",
     "bag.empty": "Your list is empty",
@@ -218,6 +220,7 @@ window.I18N = {
     "p.pickSize": "يرجى اختيار المقاس",
     "p.close": "إغلاق",
     "p.note": "نؤكد المقاس وتوفر المنتج عند الطلب.",
+    "p.soldOut": "نفدت الكمية",
 
     "bag.title": "قائمة الطلب",
     "bag.empty": "القائمة فارغة",
